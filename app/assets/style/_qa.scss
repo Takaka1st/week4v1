@@ -1,0 +1,94 @@
+/*常見問題*/
+.qa_content{
+  margin-bottom: 264px;
+}
+.qa_bg{
+  background: url(https://hexschool.github.io/webLayoutTraining1st/week3/qa.png) no-repeat center center;
+  height: 304px;
+  background-size: cover;
+  margin-bottom: 80px;
+}
+.qa{
+  height: 304px;
+  display: flex;
+  align-items: flex-end;
+}
+.qa_title{
+  display: flex;
+  align-items: center;
+}
+.qa_title h2{
+  font-size: 64px;
+  line-height: 90px;
+  font-weight: bold;
+  margin-right: 24px;
+}
+.qa_title img{
+  width: 58px;
+  height: 58px;
+}
+.qa_subtitle{
+  font-size: 32px;
+  line-height: 2;
+  margin-bottom: 36px;
+  font-weight: bold;
+}
+.qa_content h4{
+  font-size: 20px;
+  line-height: 23px;
+  margin-bottom: 16px;
+  font-weight: bold;
+}
+.qa_box{
+  margin-bottom: 40px;
+}
+.qa_text{
+  font-size: 16px;
+  line-height: 1.5;
+  display: table;
+  margin: 0 auto;
+}
+/*qa-375*/
+@media(max-width: 375px){
+  .container{
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .qa_bg{
+    height: 143px;
+    max-width: 375px;
+    margin-bottom: 24px;
+  }
+  .qa_content{
+    margin-bottom: 56px;
+  }
+  .qa{
+    height: 143px;
+  }
+  .qa_title h2{
+    font-size: 28px;
+    line-height: 1.5;
+    margin-right: 8px;
+  }
+  .qa_title img{
+    width: 24px;
+    height: 24px;
+  }
+  .qa_subtitle{
+    font-size: 20px;
+    margin-bottom: 12px;
+  }
+  .other_brands{
+    margin-top: 24px;
+  }
+  .qa_content h4{
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  .qa_text{
+    font-size: 14px;
+  }
+}
+
+
+

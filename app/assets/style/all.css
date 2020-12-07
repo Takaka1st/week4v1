@@ -1,0 +1,377 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Noto Sans TC', sans-serif;
+}
+
+.header a, .footer a {
+  color: white;
+}
+
+/*header*/
+.header {
+  background: #AA0601;
+  padding-left: 88px;
+  padding-right: 88px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.header_content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header_menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header_menu a {
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.header_menu li {
+  margin-left: 64px;
+}
+
+.logo a {
+  background: url(https://hexschool.github.io/webLayoutTraining1st/week3/logo.png) no-repeat;
+  display: block;
+  width: 80px;
+  height: 49px;
+  text-indent: 101%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+/*header-375*/
+@media (max-width: 375px) {
+  .header {
+    padding: 0;
+  }
+  .header_content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .logo a {
+    width: 48px;
+    height: 29px;
+    background-size: contain;
+  }
+  .logo {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .header_menu li {
+    border: 1px solid white;
+    margin-left: 0;
+    width: 50%;
+    text-align: center;
+  }
+  .header_menu {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 100%;
+  }
+}
+
+/*footer*/
+.footer {
+  background: #AA0601;
+  padding-top: 36px;
+  padding-bottom: 28px;
+}
+
+.footer_nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer_menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer_menu a {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.footer_menu li {
+  margin-right: 48px;
+}
+
+.footer_icon li {
+  display: inline-block;
+  margin-left: 32px;
+}
+
+.footer_icon img {
+  width: 48px;
+  height: 48px;
+}
+
+.contact {
+  margin-bottom: 24px;
+}
+
+.contact li {
+  color: white;
+  font-size: 36px;
+  line-height: 1.5;
+  font-family: 'Roboto', sans-serif;
+}
+
+.contact img {
+  display: inline-block;
+  width: 38px;
+  height: 38px;
+  margin-right: 20px;
+  vertical-align: middle;
+}
+
+.copyright {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 24px;
+  border-top: 1px solid white;
+}
+
+.copyright_text p {
+  display: inline;
+  color: white;
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: 'Roboto', sans-serif;
+}
+
+.copyright_text img {
+  display: inline-block;
+  width: 80px;
+  height: 49px;
+  margin-right: 38px;
+  vertical-align: middle;
+}
+
+.privacy ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.privacy li {
+  margin-left: 62px;
+}
+
+.privacy li a {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/*footer-375*/
+@media (max-width: 375px) {
+  .footer {
+    padding-top: 24px;
+    padding-bottom: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .footer_menu {
+    display: none;
+  }
+  .footer_nav {
+    position: relative;
+  }
+  .footer_icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .footer_icon img {
+    width: 24px;
+    height: 24px;
+  }
+  .footer_icon li {
+    margin-left: 24px;
+  }
+  .contact img {
+    width: 14px;
+    height: 14px;
+    margin-right: 7px;
+  }
+  .contact li {
+    font-size: 16px;
+  }
+  .copyright {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    position: relative;
+  }
+  .copyright_text {
+    margin-bottom: 7px;
+  }
+  .copyright_text p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  .privacy ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .privacy li {
+    margin: 0;
+    margin-bottom: 8px;
+  }
+  .copyright_text img {
+    width: 46px;
+    height: 28px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+/*qa*/
+.qa_content {
+  margin-bottom: 264px;
+}
+
+.qa_bg {
+  background: url(https://hexschool.github.io/webLayoutTraining1st/week3/qa.png) no-repeat center;
+  height: 304px;
+  width: auto;
+  margin-bottom: 80px;
+}
+
+.qa_title {
+  font-size: 64px;
+  line-height: 1.25;
+  font-weight: bold;
+}
+
+.qa_title::after {
+  content: url(https://hexschool.github.io/webLayoutTraining1st/week3/icon-help.svg);
+  position: absolute;
+  width: 58px;
+  height: 58px;
+}
+
+.qa_subtitle {
+  font-size: 32px;
+  line-height: 2;
+  margin-bottom: 36px;
+  font-weight: bold;
+}
+
+.qa_content h4 {
+  font-size: 20px;
+  margin-bottom: 16px;
+  font-weight: bold;
+}
+
+.qa_box {
+  margin-bottom: 40px;
+}
+
+.qa_text {
+  font-size: 16px;
+  line-height: 1.5;
+  display: table;
+  margin: 0 auto;
+}
+/*# sourceMappingURL=all.css.map */

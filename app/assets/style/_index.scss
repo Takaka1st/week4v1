@@ -1,0 +1,430 @@
+/*Top*/
+.banner{
+  background: url(https://hexschool.github.io/webLayoutTraining1st/week3/banner.png) no-repeat center center;
+  background-size: cover;
+  height: 840px;
+  position: relative;
+}
+.top_title{
+  width: 585px;
+  height: 140px;
+  position: absolute;
+  right: 396px;
+  top: 350px;
+}
+.banner h1{
+  font-size: 64px;
+  line-height: 1.5;
+  font-weight: bold;
+  color: #650300;
+}
+.banner h3{
+  font-size: 36px;
+  color: #650300;
+  text-align: right;
+}
+
+/*Top-375*/
+@media(max-width: 375px){
+  .banner{
+    background: url(https://hexschool.github.io/webLayoutTraining1st/week3/banner-sm.png) no-repeat center center;
+    background-size: cover;
+    height: 394px;
+  }
+  .top_title{
+    width: 288px;
+    height: 67px;
+    right: 15px;
+    top: 164px;
+  }
+  .banner h1{
+    font-size: 32px;
+  }
+  .banner h3{
+    font-size: 16px;
+  }
+}
+
+/*標語-聯絡我們padding*/
+.slogan,.glasses_series,.collab,.customer,.contactUs{
+  padding-top: 64px;
+  padding-bottom: 80px;
+}
+
+/*標語-聯絡我們-375*/
+@media(max-width: 375px){
+.slogan,.glasses_series,.collab,.customer,.contactUs{
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+}
+/*標語-聯絡我們padding END*/
+
+/*標語*/
+.slogan{
+  background: #AA06010D;
+}
+.slogan_content{
+  width: 1060px;
+  display: flex;
+  justify-content: space-around;
+}
+.slogan_box{
+  width: 208px;
+}
+.sloganPic{
+  height: 100px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+.slogan_box img{
+  width: 100px;
+  height: auto;
+}
+.slogan h2{
+  text-align: center;
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 1.5;
+  color: #650300;
+  margin-bottom: 63px;
+}
+.slogan_box h4{
+  text-align: center;
+  font-weight: bold;
+  color: #650300;
+  margin-bottom: 4px;
+}
+.slogan_box p{
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/*標語-375*/
+@media(max-width: 375px){
+  .slogan_content{
+    width: 264px;
+    flex-wrap: wrap;
+  }
+  .slogan_box{
+    width: 237px;
+    margin-bottom: 40px;
+  }
+  .sloganPic{
+    margin-bottom: 16px;
+  }
+  .slogan_box_04{
+    margin-bottom: 0;
+  }
+  .slogan h2{
+    font-size:24px;
+    margin-bottom: 20px;
+  }
+}
+/*標語 END*/
+
+/*系列鏡框-聯絡我們h2*/
+.glasses_series h2,.collab h2,.customer h2,.contactUs h2{
+  text-align: center;
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 1.5;
+  margin-bottom: 60px;
+}
+/*系列鏡框-聯絡我們h2-375*/
+@media(max-width: 375px){
+  .glasses_series h2,.collab h2,.customer h2,.contactUs h2{
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+}
+
+/*系列鏡框-聯絡我們h2 END*/
+
+/*系列鏡框*/
+.glasses_series h2{
+  color: #650300;
+}
+.series_box h2{
+  color: #AA0601;
+  font-weight: 900;
+  font-style: italic;;
+}
+.series_box{
+  height: 320px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 32px;
+}
+  
+/*鏡框圖*/
+.seriesPic{
+  height: 320px;
+  width: 635px;
+  background-size: contain;
+}
+.seriesPic_01{
+  background: url(https://hexschool.github.io/webLayoutTraining1st/week3/product-1.png) no-repeat center center;
+  margin-right: 30px;
+}
+.seriesPic_02{
+  background: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/product-2.png) no-repeat center center;
+  margin-left: 30px;
+}
+.seriesPic_03{
+  background: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/product-3.png) no-repeat center center;
+  margin-right: 30px;
+}
+.series_icon{
+  display: inline-block;
+  margin-right: 8px;
+}
+.series_icon2{
+  display: none;
+}
+
+
+/*系列鏡框-375*/
+@media(max-width: 375px){
+  .series_box{
+    height: 134px;
+    margin-bottom: 8px;
+    justify-content: center;
+  }
+  .series_box h2{
+    position: absolute;
+    color: white;
+    font-size: 28px;
+  }
+  .series_box_03{
+    margin-bottom: 0;
+  }
+  .seriesPic{
+    height: 134px;
+    width: 345px;
+    background-size: cover;
+  }
+  .seriesPic_01,.seriesPic_03{
+    margin-right: 0;
+  }
+  .seriesPic_02{
+    margin-left: 0;
+  }
+  .series_icon{
+    display: none;
+  }
+  .series_icon2{
+    display: inline-block;
+    height: 25px;
+    margin-right: 8px;
+  }
+}
+/*系列鏡框 END*/
+
+/*合作聯名*/
+.collab{
+  background: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/bg.png) no-repeat center center;
+}
+.collab h2{
+  color: white;
+}
+.collab_content{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.collab_box{
+  position: relative;
+  width: 540px;
+  height: 472px;
+}
+.collab_box img{
+max-width: 540px;
+height: auto;
+display: block;
+}
+.collab_box:before{
+  content: '';
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+  transition:1s;
+}
+.collab_box:hover:before{
+  background-color: rgba(255 , 255 , 255 , 0.5);
+  transition:.5s;
+}
+.collab_text{
+  width: 540px;
+  height: 472px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.collab_box a{
+  position: absolute;
+  font-size: 72px;
+  font-weight: bold;
+  line-height: 1.5;
+  color: #AA0601;
+}
+
+/*合作聯名-375*/
+@media(max-width: 375px){
+.collab_box{
+    width: 345px;
+    height: 284px;
+    margin-bottom: 32px;
+  }
+  .collab_box img{
+    max-width: 345px;
+    height: auto;
+  }
+  .collab_text{
+    width: 345px;
+    height: 284px;
+  }
+  .collab_box a{
+    font-size: 32px;
+  }
+}
+/*合作聯名 END*/
+
+
+/*顧客推薦*/
+.customer h2{
+  color: #650300;
+}
+.customer_content{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.customer_content li{
+  height: 460px;
+  width: 255px;
+}
+.customerPic{
+  height: 256px;
+  max-width:100%;
+  display: block;
+}
+.customer_content p{
+  padding: 15px;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #212529;
+  text-align: left;
+  font-weight: normal;
+  border: #DEE2E6 1px solid;
+}
+.customer_name{
+  font-size: 14px;
+  font-weight: bold;
+}
+.customer_time{
+  font-size: 14px;
+  color: #707070;
+  margin-top: 10px;
+}
+.customer_content li:hover{
+  transform : scale(0.9);
+  transition: box-shadow .25s;
+  box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+/*顧客推薦-375*/
+@media(max-width: 375px){
+  .customer_content li{
+    margin-bottom: 16px;
+  }
+}
+/*顧客推薦 END*/
+
+/*聯絡我們*/
+.contactUs{
+  background: #AA06010D;
+  color: #000000;
+  font-size: 16px;
+  line-height: 1.5;
+}
+.contactUs_content{
+  margin: 0 auto;
+  width: 730px;
+}
+.contactUs h2{
+  margin-bottom: 24px;
+}
+.contactUs_description{
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.contactUs_form li {
+  margin-bottom: 16px;
+}
+.contactUs_form li p{
+}
+.contactUs_Box{
+  width: 730px;
+  opacity: 0.2;
+  padding: 14px;
+  border: 1px solid black;
+}
+.contactUs_privacy{
+  margin-bottom: 42px;
+}
+.contactUs_btn{
+  width: 350px;
+  height: 54px;
+  display: block;
+  background: #AA0601;
+  color: white;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  padding-top: 16px;
+  margin: 0 auto;
+}
+.contactUs_btn:hover{
+  background: #650300;
+}
+
+/*聯絡我們-375*/
+@media(max-width: 375px){
+  .contactUs{
+    font-size: 14px;
+  }
+  .contactUs_content{
+    width: 345px;
+  }
+  .contactUs h2{
+    margin-bottom: 20px;
+  }
+  .contactUs_description{
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  .contactUs_form li {
+    margin-bottom: 8px;
+  }
+  .contactUs_form li p{
+    font-size: 14px;
+  }
+  .contactUs_Box{
+    width: 345px;
+    font-size: 14px;
+    padding: 10px;
+  }
+  .contactUs_privacy{
+    margin-bottom: 24px;
+  }
+  .contactUs_btn{
+    width: 165px;
+    height: 36px;
+    padding-top: 8px;
+  }
+}
